@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Posts</title>
+</head>
+
+<body>
+  <section id="hello">
+    <p>Make a POST request as JSON Raw, example:</p>
+    <p><code>
+      {
+        "title": "Blog title",
+        "body": "Blog body"
+      }
+    </code>
+    </p>
+    <p>Endpoints</p>
+    <code>Create: /api/post</code><br />
+    <code>Get: /api/post/:post_id</code><br />
+    <code>List: /api/posts</code><br />
+    <code>Delete: /api/post/:post_id</code><br />
+    <h1>Posts</h1>
+    New Posts - {{ count }}
+    <ul>
+      {{#each posts}}
+      <li>Title: {{ this.id }}</li>
+      <li>Title: {{ this.title }}</li>
+      <li>Body: {{ this.body }}</li>
+      <hr />
+      {{else}}
+      <p> No posts yet</p>
+      {{/each}}
+    </ul>
+  </section>
+</body>
+
+</html>
