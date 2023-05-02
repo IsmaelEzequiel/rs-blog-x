@@ -1,0 +1,2 @@
+[deploy]
+  release_command = "./build.sh"
