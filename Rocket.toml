@@ -1,6 +1,8 @@
 [default]
 template_dir = "templates/"
+port = 8080
 
 [release]
 template_dir = "templates/"
 secret_key = "GNFpayrRHo1qs8iowp805myB0EKIMF2QRjFJ/KRkluU="
+port = 8080
