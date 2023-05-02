@@ -1,2 +1,5 @@
+app = "rs-blog"
+primary_region = "ord"
+
 [deploy]
   release_command = "./build.sh"
